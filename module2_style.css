@@ -1,0 +1,72 @@
+*{
+	box-sizing: border-box;
+}
+h1{
+	text-align: center;
+	font-family: initial;
+	margin-bottom: 50px;
+}
+p{
+	padding: 10px;
+	font-family: inherit;
+	font-size: 18px;
+}
+.ball{
+	background-color: gray;
+	border: 2px solid black;
+	margin-top: 10px;
+	margin-right: 20px;
+	margin-left: 20px;
+	position: relative;
+}
+
+section{
+	width: 140px;
+	font-size: 20px;
+	font-family: monospace;
+	border: 1px solid black;
+	text-align: center;
+	float: right;
+	position: relative;
+}
+#cat{
+	background-color: indianred;
+}
+#rat{
+	background-color: skyblue;
+}
+#bat{
+	background-color: greenyellow;
+}
+
+.row{
+	width: 100%;
+}
+
+/********* Desktop View *********/
+@media (min-width: 992px){
+	.col-lg-4{
+		float: left;
+		width: 33%;
+	}
+}
+
+/******** Tablet View **********/
+@media (min-width: 768px) and (max-width: 991px){
+	.col-md-6{
+		float: left;
+		width: 50%;
+	}
+	.col-md-12{
+		float: left;
+		width: 100%;
+	}
+}
+
+/******** Mobile View *********/
+@media (max-width: 767px){
+	.col-sx-12{
+		float: left;
+		width: 100%;
+	}
+}
